@@ -1,0 +1,53 @@
+<div class="d-flex justify-content-center">
+    <img src="./assets/img/banner_Naruto.png" class="w-100" alt="">
+</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <button class="btn btn-link text-decoration-none text-light" [routerLink]="['/Inicio']" routerLinkActive="router-link-active" >Inicio</button>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-link text-decoration-none text-light" [routerLink]="['/Galeria']" routerLinkActive="router-link-active">Galeria</button>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-link text-decoration-none text-light" [routerLink]="['/Aldeas']" routerLinkActive="router-link-active">Aldeas</button>
+            </li>
+            <li class="nav-item dropdown">
+                <button class="btn btn-link text-decoration-none text-light" [routerLink]="['/Temporadas']" routerLinkActive="router-link-active" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Temporadas</button>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Temporada 1</a></li>
+                    <li><a class="dropdown-item" href="#">Temporada 2</a></li>
+                    <li><a class="dropdown-item" href="#">Temporada 3</a></li>
+                    <li><a class="dropdown-item" href="#">Temporada 4</a></li>
+                    <li><a class="dropdown-item" href="#">Temporada 5</a></li>
+                    <li><a class="dropdown-item" href="#">Temporada 6</a></li>
+                    <li><a class="dropdown-item" href="#">Temporada 7</a></li>
+                    <li><a class="dropdown-item" href="#">Temporada 8</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-link text-decoration-none text-light" [routerLink]="['/Banda-S']" routerLinkActive="router-link-active">Banda Sonora</button>
+            </li>
+            </ul>
+        </div>
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-warning" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+</nav>
+
+<router-outlet></router-outlet>
+
+<footer>
+    <div class="container-fluid">
+        <div class="col-12 p-3 bg-dark text-light text-center">
+        <h1>DERECHOS RESERVADOS</h1>
+        </div>
+    </div>
+</footer>
