@@ -1,0 +1,20 @@
+.img_wit{
+    height: 30%;
+    margin-bottom: 20px;
+    border-radius: 8%;
+}
+
+.titulo{
+    color: #060335;
+    text-shadow: 4px 4px 4px #272525;
+}
+
+.imagencolor:hover {
+    filter: opacity(.5);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.imagenborde:hover {
+    box-shadow: 0px 0px 12px 10px #0d0d0f;
+}

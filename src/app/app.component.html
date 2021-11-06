@@ -17,6 +17,9 @@
             <li class="nav-item">
                 <button class="btn btn-link text-decoration-none text-light" [routerLink]="['/Aldeas']" routerLinkActive="router-link-active">Aldeas</button>
             </li>
+            <li class="nav-item">
+                <button class="btn btn-link text-decoration-none text-light" [routerLink]="['/Jinchurikis']" routerLinkActive="router-link-active">Jinchurikis</button>
+            </li>
             <li class="nav-item dropdown">
                 <button class="btn btn-link text-decoration-none text-light" [routerLink]="['/Temporadas']" routerLinkActive="router-link-active" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Temporadas</button>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -42,12 +45,12 @@
     </div>
 </nav>
 
+
+
 <router-outlet></router-outlet>
 
 <footer>
-    <div class="container-fluid">
-        <div class="col-12 p-3 bg-dark text-light text-center">
-        <h1>DERECHOS RESERVADOS</h1>
-        </div>
+    <div class="container-fluid p-3 bg-dark text-light text-center">
+        <h6>DERECHOS RESERVADOS</h6>
     </div>
 </footer>

@@ -8,6 +8,7 @@ import { BandaSonoraComponent } from './components/banda-sonora/banda-sonora.com
 import { GaleriaComponent } from './components/galeria/galeria.component';
 import { TemporadasComponent } from './components/temporadas/temporadas.component';
 import { InicioComponent } from './components/inicio/inicio.component';
+import { JinchurikisComponent } from './components/jinchurikis/jinchurikis.component';
 
 const routes: Routes = [
   { path: 'Aldeas', component:AldeasComponent },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'Galeria', component:GaleriaComponent },
   { path: 'Temporadas', component: TemporadasComponent },
   { path: 'Inicio', component: InicioComponent },
+  { path:'Jinchurikis', component: JinchurikisComponent},
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
