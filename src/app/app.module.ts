@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -8,6 +9,10 @@ import { AldeasComponent } from './components/aldeas/aldeas.component';
 import { TemporadasComponent } from './components/temporadas/temporadas.component';
 import { BandaSonoraComponent } from './components/banda-sonora/banda-sonora.component';
 import { GaleriaComponent } from './components/galeria/galeria.component';
+import { CrearPersonajeComponent } from './components/crear-personaje/crear-personaje.component';
+import { ListarPersonajesComponent } from './components/listar-personajes/listar-personajes.component';
+import { Pagina404Component } from './components/pagina404/pagina404.component';
+
 
 @NgModule({
   declarations: [
@@ -17,10 +22,14 @@ import { GaleriaComponent } from './components/galeria/galeria.component';
     TemporadasComponent,
     BandaSonoraComponent,
     GaleriaComponent,
+    CrearPersonajeComponent,
+    ListarPersonajesComponent,
+    Pagina404Component,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

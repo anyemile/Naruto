@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <div class="col-8 offset-2 mt-5"></div>
+        <p class="h1 text-center fw-bold">Crear Personaje</p>
+    </div>
+    <div class="col-6 offset-3">
+        <form class="mt-5" [formGroup]="personajeForm" (ngSubmit)="agregarPersonaje()" >
+            <div class="my-3">
+                <input formControlName="personajeNombre" class="form-control form-control-lg" type="text" placeholder="Nombre">
+                <span></span>
+            </div>
+            <div class="my-3">
+                <input formControlName="personajeGenero" class="form-control form-control-lg" type="text" placeholder="Genero">
+                <span></span>
+            </div>
+            <div class="my-3">
+                <input formControlName="personajeTecnicas" class="form-control form-control-lg" type="text" placeholder="Tecnicas">
+                <span></span>
+            </div>
+            <div class="my-3">
+                <input formControlName="personajeClan" class="form-control form-control-lg" type="text" placeholder="Clan">
+                <span></span>
+            </div>
+            <div class="my-3">
+                <input formControlName="personajeChakra" class="form-control form-control-lg" type="text" placeholder="Naturaleza Chakra">
+                <span></span>
+            </div>
+            <div class="col-6 offset-3 my-5 d-flex justify-content-between align-content-center">
+                <button class="btn btn-danger" [routerLink]="['/listar-personajes']" routerLinkActive="router-link-active" >Cancelar</button>
+                <button type="submit" class="btn btn-success">Guardar</button>
+            </div>
+    
+        </form>
+
+    </div>
+</div>
