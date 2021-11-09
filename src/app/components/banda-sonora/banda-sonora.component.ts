@@ -6,10 +6,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./banda-sonora.component.css']
 })
 export class BandaSonoraComponent implements OnInit {
+  audio = new Audio();
+  audioPlay:Boolean = false;
 
-  constructor() { }
+  constructor() {
+    this.audio.src = '../../../assets/media/Naruto Soundtrack.mp3';
+    this.audio.load();
+  }
 
   ngOnInit(): void {
+  }
+
+  reproducir(){
+    this.audio.load();
+    this.audio.play();
+    this.audioPlay = true;
+  }
+
+  pausar(){
+    this.audio.pause();
+    this.audioPlay = false;
   }
 
 }

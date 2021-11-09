@@ -1,53 +1,56 @@
 
-<!-- <div class="container m-5">
-    <div>
-        <h1 class="d-flex justify-content-center"><strong>Banda Sonora</strong></h1>
-        <p class="m-md-5">La <strong>Banda Sonora de Naruto</strong> está compuesta de una serie de canciones de apertura y cierre de los episodios (Opening y Ending), pertenecientes a grupos conocidos en Japón para la versión original.
-        En el anime Naruto, todas estas piezas son obra del compositor <strong>Toshiro Masuda.</strong> 
-        </p>
-    </div> -->
-
-    <div class="container">
-        <div class="player">
-            <div class="player__controls">
-                <div class="player__btn player__btn--small">
-                    <i class="fas fa-arrow-left"></i>
-                </div>
-                <h5 class="player__title">Playing Now</h5>
-                <div class="player__btn player__btn--small">
-                    <i class="fas fa-bars"></i>
-                </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 d-flex justify-content-center align-items-center">
+                <div class="m-5 player">
+                    <div class="player__controls">
+                        <div class="player__btn player__btn--small">
+                            <i class="fas fa-arrow-left"></i>
+                        </div>
+                        <h5 class="player__title">Playing Now</h5>
+                        <div class="player__btn player__btn--small">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </div>
+                    <div class="player__album">
+                        <img src="assets/img/MusicaNaruto.jpg" alt="Album cover" class="player__img">
+                    </div>
+                    <h2 class="player__artist">Toshiro Masuda</h2>
+                    <h3 class="player__song">Tenten</h3>
+        
+                    <input type="range" value="20" min="0" class="player__level">
+        
+                    <div class="audio__duration">
+                        <div class="start">00:01</div>
+                        <div class="end">04:30</div>
+                    </div>
+        
+                    <audio class="player__audio" controls id="audio">
+                        <source src="assets/media/Naruto Soundtrack.mp3" type="audio/mpeg">
+                    </audio>
+        
+                    <div class="player__controls">      
+                        <div class="player__btn player__btn--medium">
+                            <i class="fas fa-backward"></i>
+                        </div>
+            
+                        <div class="player__btn player__btn--medium blue">
+                            <i class="fas fa-play play-btn" (click)="reproducir()" *ngIf="!audioPlay"></i>
+                            <i class="fas fa-pause pause-btn" (click)="pausar()" *ngIf="audioPlay"></i>
+                        </div>
+            
+                        <div class="player__btn player__btn--medium">
+                            <i class="fas fa-forward"></i>
+                        </div> 
+                    </div>   
+                </div>  
             </div>
-            <div class="player__album">
-                <img src="assets/img/MusicaNaruto.jpg" alt="Album cover" class="player__img">
-            </div>
-            <h2 class="player__artist">Toshiro Masuda</h2>
-            <h3 class="player__song">Tenten</h3>
+            <div class="col-6 d-flex justify-content-center align-items-center">
+                <h1 class="d-flex justify-content-center fw-bold">Banda Sonora</h1>
+                <p class="m-md-5">La <strong>Banda Sonora de Naruto</strong> está compuesta de una serie de canciones de apertura y cierre de los episodios (Opening y Ending), pertenecientes a grupos conocidos en Japón para la versión original.
+                En el anime Naruto, todas estas piezas son obra del compositor <strong>Toshiro Masuda.</strong> 
+                </p>
+            </div>     
 
-            <input type="range" value="20" min="0" class="player__level">
-
-            <div class="audio__duration">
-                <div class="start">00:01</div>
-                <div class="end">04:30</div>
-            </div>
-
-            <audio class="player__audio" controls id="audio">
-                <source src="assets/media/Naruto Soundtrack.mp3" type="audio/mpeg">
-            </audio>
-
-            <div class="player__controls">      
-                <div class="player__btn player__btn--medium">
-                    <i class="fas fa-backward"></i>
-                </div>
-    
-                <div class="player__btn player__btn--medium blue">
-                    <i class="fas fa-play play-btn"></i>
-                    <i class="fas fa-pause pause-btn hide"></i>
-                </div>
-    
-                <div class="player__btn player__btn--medium">
-                    <i class="fas fa-forward"></i>
-                </div> 
-            </div>   
-        </div>       
+        </div>
     </div>

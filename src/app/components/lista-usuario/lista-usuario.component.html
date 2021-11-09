@@ -1,1 +1,61 @@
-<p>lista-usuario works!</p>
+<div class="container mt-4">
+    <div class="row my-4">
+        <div class="col-8 offset-2 d-flex justify-content-between align-content-center">
+        <p class="fw bold h1">Lista Usuario</p>
+        <button class="btn btn-warning my-3" [routerLink]="['/crear-usuario']" routerLinkActive="router-link-active" >Crear Usuario</button>
+        </div>
+        <div class="col-8 - offset-2">
+        <table class="table table-secondary table-striped">
+            <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Tipo de Identificación</th>
+                <th scope="col">Identificación</th>
+                <th scope="col">Correo Eléctronico</th>
+                <th scope="col">Teléfono</th>
+                <th scope="col">contraseña</th>
+                <th scope="col">acciones</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Sakura Haruno</td>
+                <td>Femenino</td>
+                <td>Jutsu Fuerza de un Centena</td>
+                <td>Uchiha</td>
+                <td>Tierra, Agua, Yin, Yang</td>
+                <td>
+                    <i class="fas fa-pencil-alt" [routerLink]="['/editar-usuario/1']" routerLinkActive="router-link-active" ></i>
+                    <i class="fas fa-trash-alt"></i>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Naruto Uzumaki</td>
+                <td>Masculino</td>
+                <td>Jutsu Multiclones de Sombras</td>
+                <td>Uzumaki</td>
+                <td>Viento, Agua, Fuego, Tierra, Imán</td>
+                <td>
+                    <i class="fas fa-pencil-alt" [routerLink]="['/editar-personaje/2']" routerLinkActive="router-link-active" ></i>
+                    <i class="fas fa-trash-alt"></i>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <i class="fas fa-pencil-alt"></i>
+                    <i class="fas fa-trash-alt"></i>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+</div>
