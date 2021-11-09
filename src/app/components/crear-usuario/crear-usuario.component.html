@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="row">
+        <div class="col-8 offset-2 mt-5 mb-5"> 
+            <p class="h1 text-center fw-bold">Crea tu cuenta</p>
+        </div>     
+            <div class="col-6 offset-3">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Tipo de identificación</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Seleccione</option>
+                            <option value="1">Cédula</option>
+                            <option value="2">Cédula Extranjeria</option>
+                            <option value="3">Tarj.Identidad</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">identificación</label>
+                        <input class="form-control" type="number" aria-describedby="identHelp">
+                        <!-- <span *ngIf="personajeForm.get('personajeNombre')?.hasError('required') && personajeForm.get('personajeNombre')?.touched" class="text-danger fw-bold">
+                            *Número de identificación es obligatorio
+                        </span> -->
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for=" " class="form-label">Teléfono celular</label>
+                        <input type="number" class="form-control" id="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Acepto los Términos del servicio y la Política de privacidad y ley de datos personales</label>
+                    </div>
+                    <div class="col-12 my-5 d-flex justify-content-center align-content-center">
+                        <button type="submit" class="mb-5 btn btn-secondary">Registrarse</button>
+                    </div>
+                    
+                </form>
+            </div>
+    </div>
+</div>
+

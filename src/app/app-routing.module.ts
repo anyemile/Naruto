@@ -12,6 +12,8 @@ import { JinchurikisComponent } from './components/jinchurikis/jinchurikis.compo
 import { CrearPersonajeComponent } from './components/crear-personaje/crear-personaje.component';
 import { ListarPersonajesComponent } from './components/listar-personajes/listar-personajes.component';
 import { Pagina404Component } from './components/pagina404/pagina404.component';
+import { CrearUsuarioComponent } from './components/crear-usuario/crear-usuario.component';
+import { ListaUsuarioComponent } from './components/lista-usuario/lista-usuario.component';
 
 const routes: Routes = [
   { path: '', component:InicioComponent},
@@ -25,6 +27,8 @@ const routes: Routes = [
   { path: 'listar-personajes', component:ListarPersonajesComponent},
   { path: 'editar-personaje/:id', component: CrearPersonajeComponent},
   { path: '404', component:Pagina404Component},
+  { path: 'crear-usuario', component:CrearUsuarioComponent},
+  { path: 'lista-usuario', component:ListaUsuarioComponent},
   { path: '**', redirectTo: '404', pathMatch: 'full' }
 ];
 

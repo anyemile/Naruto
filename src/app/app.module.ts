@@ -12,6 +12,8 @@ import { GaleriaComponent } from './components/galeria/galeria.component';
 import { CrearPersonajeComponent } from './components/crear-personaje/crear-personaje.component';
 import { ListarPersonajesComponent } from './components/listar-personajes/listar-personajes.component';
 import { Pagina404Component } from './components/pagina404/pagina404.component';
+import { CrearUsuarioComponent } from './components/crear-usuario/crear-usuario.component';
+import { ListaUsuarioComponent } from './components/lista-usuario/lista-usuario.component';
 
 
 @NgModule({
@@ -25,6 +27,8 @@ import { Pagina404Component } from './components/pagina404/pagina404.component';
     CrearPersonajeComponent,
     ListarPersonajesComponent,
     Pagina404Component,
+    CrearUsuarioComponent,
+    ListaUsuarioComponent,
   ],
   imports: [
     BrowserModule,

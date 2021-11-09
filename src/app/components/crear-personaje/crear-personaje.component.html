@@ -7,27 +7,37 @@
         <form class="mt-5" [formGroup]="personajeForm" (ngSubmit)="agregarPersonaje()" >
             <div class="my-3">
                 <input formControlName="personajeNombre" class="form-control form-control-lg" type="text" placeholder="Nombre">
-                <span></span>
+                <span *ngIf="personajeForm.get('personajeNombre')?.hasError('required') && personajeForm.get('personajeNombre')?.touched" class="text-danger fw-bold">
+                    *El nombre del personaje es obligatorio
+                </span>
             </div>
             <div class="my-3">
                 <input formControlName="personajeGenero" class="form-control form-control-lg" type="text" placeholder="Genero">
-                <span></span>
+                <span *ngIf="personajeForm.get('personajeGenero')?.hasError('required') && personajeForm.get('personajeGenero')?.touched" class="text-danger fw-bold">
+                    *El genero del personaje es obligatorio
+                </span>
             </div>
             <div class="my-3">
                 <input formControlName="personajeTecnicas" class="form-control form-control-lg" type="text" placeholder="Tecnicas">
-                <span></span>
+                <span *ngIf="personajeForm.get('personajeTecnicas')?.hasError('required') && personajeForm.get('personajeTecnicas')?.touched" class="text-danger fw-bold">
+                    *Las tecnicas del pesonaje son obligatorias
+                </span>
             </div>
             <div class="my-3">
                 <input formControlName="personajeClan" class="form-control form-control-lg" type="text" placeholder="Clan">
-                <span></span>
+                <span *ngIf="personajeForm.get('personajeClan')?.hasError('required') && personajeForm.get('personajeClan')?.touched" class="text-danger fw-bold">
+                    *El clan del personaje es obligatorio
+                </span>
             </div>
             <div class="my-3">
                 <input formControlName="personajeChakra" class="form-control form-control-lg" type="text" placeholder="Naturaleza Chakra">
-                <span></span>
+                <span *ngIf="personajeForm.get('personajeChakra')?.hasError('required') && personajeForm.get('personajeChakra')?.touched" class="text-danger fw-bold">
+                    *La naturaleza del Chakra del personaje es obligatorio
+                </span>
             </div>
-            <div class="col-6 offset-3 my-5 d-flex justify-content-between align-content-center">
-                <button class="btn btn-danger" [routerLink]="['/listar-personajes']" routerLinkActive="router-link-active" >Cancelar</button>
-                <button type="submit" class="btn btn-success">Guardar</button>
+            <div class="col-12 my-5 d-flex justify-content-between align-content-center">
+                <button class="btn btn-warning" [routerLink]="['/listar-personajes']" routerLinkActive="router-link-active" >Cancelar</button>
+                <button type="submit" class="btn btn-secondary"[disabled]="personajeForm.invalid">Guardar Personaje</button>
             </div>
     
         </form>
