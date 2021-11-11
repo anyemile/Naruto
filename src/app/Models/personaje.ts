@@ -1,4 +1,4 @@
-export class personaje{
+export class Personaje{
     _id?: number;
     nombre: string;
     genero: string;

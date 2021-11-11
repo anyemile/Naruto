@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
+import { personaje } from 'src/app/Models/personaje';
 
 
 @Component({
@@ -28,6 +29,9 @@ export class CrearPersonajeComponent implements OnInit {
 
   agregarPersonaje(){
     console.log(this.personajeForm);
+
+    console.log(this.personajeForm.get('personajeNombre')?.value);
+
     this.router.navigate(['/listar-personajes']);
     Swal.fire({
       position: 'center',
