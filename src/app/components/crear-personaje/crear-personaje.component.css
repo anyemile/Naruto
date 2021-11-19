@@ -1,1 +1,4 @@
-
+.fondo{
+    background: no-repeat center/100% url(src/assets/img/Fondo_naruto.jpg);
+    background-position: top center;
+}
