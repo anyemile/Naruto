@@ -12,7 +12,11 @@
                 </div>
             </div>
             <div class="my-3">
-                <input formControlName="personajeGenero" class="form-control form-control-lg" type="text" placeholder="Genero">
+                <!-- <input formControlName="personajeGenero" class="form-control form-control-lg" type="text" placeholder="Genero"> -->
+                <select formControlName="personajeGenero" class="form-control form-control-lg" name="Genero">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                </select>
                 <div *ngIf="personajeForm.get('personajeGenero')?.hasError('required') && personajeForm.get('personajeGenero')?.touched" class="alert alert-danger fst-italic">
                     *El genero del personaje es obligatorio
                 </div>

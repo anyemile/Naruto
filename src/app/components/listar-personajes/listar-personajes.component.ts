@@ -42,6 +42,7 @@ import Swal from 'sweetalert2';
 					Swal.fire({
 						icon: 'success',
 						title: 'Personaje eliminado!',
+						text: 'El personaje eliminado Extitosamente',
 					})
 					this.obtenerPersonajes();
 				}, error => {

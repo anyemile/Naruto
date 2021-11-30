@@ -55,9 +55,10 @@ import Swal from 'sweetalert2';
 				Swal.fire({
 					position: 'center',
 					icon: 'success',
-					title: 'Personaje Actualizado!',
+					title: 'Datos Actualizados!',
+					text: "Los datos del personaje se han actualizado con éxtio",
 					showConfirmButton: false,
-					timer: 1500
+					timer: 3000
 				})
 				}, error => {
 				console.log(error)
@@ -70,8 +71,9 @@ import Swal from 'sweetalert2';
 					position: 'center',
 					icon: 'success',
 					title: 'Personaje Creado!',
+					text: "El personaje se ha creado con éxtio",
 					showConfirmButton: false,
-					timer: 1500
+					timer: 3000
 				})
 				}, error => {
 				console.log(error)
